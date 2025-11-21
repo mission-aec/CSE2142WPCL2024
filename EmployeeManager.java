@@ -5,6 +5,12 @@ import java.util.*;
 
 public class EmployeeManager {
     public static void main(String[] args) {
+        // Argument count check (Task #2)
+        if (args.length != 1) {
+            System.out.println("Error: Invalid number of arguments.");
+            System.out.println("Usage: java EmployeeManager <option>");
+            return;
+        }
         // Check arguments
         if (args[0].equals("l")) {
             System.out.println("Loading data ...");
